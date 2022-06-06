@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+<title>今天玩什么</title>
+
+</head>
+
+<style>
+
+
+body {
+  height:90%
+  /* width: 350px; */
+  /* zoom: 1; */
+}
+
+
+.content {
+  width: 300px;
+  margin: auto;
+}
+
+h1 {
+  color: black;
+}
+
+</style>
+
+
+<html>
+  <body>
+<div class="content">
+
+<h1>今天玩什么好呢？</h1>
+
+
+<!-- <p>Your items are:<select id="sep" name="sep"><option value="lines">on separate lines.</option><option value="commas">separated by commas.</option><option value="semi-colons">separated by semi-colons.</option><option value="space">separated by a blank space.</option></select></p> -->
+<p><textarea id="oldText" name="oldText" rows="9" cols="36">
+Rainbow Six Siege
+League of Legends
+大富翁10
+Minecraft
+Overcooked 2
+PLAYERUNKNOWN'S BATTLEGROUNDS
+原神
+</textarea></p>
+<button type="button">
+    帮我选
+</button>
+
+
+
+
+
+<h1>那我们今天就玩：</h1>
+<p><textarea id="newText" name="newText" rows="2" cols="36"></textarea></p>
+
+<h1>上次的抽奖结果：</h1>
+<p id="result"></p>
+<!-- <h1>上次抽奖时间：</h1>
+<p id="time"></p> -->
+
+</div>
+
+<script type="text/javascript" src="core.js"></script>
+</body>
+
+</html>

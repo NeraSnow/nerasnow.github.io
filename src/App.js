@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react'
+import Greetings from './Greetings'
+import Sidebar from './Sidebar'
+import LangContext from './Context'
+import LangSelect from './LangSelect'
+import EasiaStudy from './EasiaStudies'
+import Miscellaneous from './Miscellaneous'
+import Notes from './Notes'
+import Life from './Life'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// export const LangContext = React.createContext('en');
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+  
+    this.setLang = (newLang) => {
+        this.setState(state => ({
+          lang: newLang
+        }));
+      }
+
+    this.state = {
+      lang : 'en',
+      setLang : this.setLang,
+    };
+
+  }
+  render() {
+    
+
+    return (
+      <div className='wrapper'>
+        <LangContext.Provider value={this.state}>
+          <LangSelect />
+          <div className="row">
+                <Sidebar />
+            <div className="content">
+                <Greetings />
+                <EasiaStudy />
+                <Miscellaneous />
+                <Notes />
+                <Life />
+            </div>
+          </div>
+          </LangContext.Provider>
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
