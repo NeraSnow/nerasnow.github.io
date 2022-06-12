@@ -25,7 +25,7 @@ class Sidebar extends Component {
 
     const Resources = [
         {
-            url: "public/Benjamin_CV.pdf",
+            url: "Benjamin_CV.pdf",
             text: "Remuse",
         },
         {
