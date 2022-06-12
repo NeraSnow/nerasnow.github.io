@@ -41,9 +41,9 @@ class Greetings extends Component {
     
     return (
     <div>
-      <Trilingual message={greetings}/>
-      <Trilingual message={introduction} />
-      <Trilingual message={chart} />
+      <Trilingual message={greetings} level="h2"/>
+      <Trilingual message={introduction} level="p"/>
+      <Trilingual message={chart} level="p"/>
     </div>
     )
   }

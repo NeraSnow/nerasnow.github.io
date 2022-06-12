@@ -26,7 +26,7 @@ class Miscellaneous extends Component {
     render() {
         return (
         <div>
-            <Trilingual message={title}/>
+            <Trilingual message={title} level="h2"/>
             <ul className="indent">
                   <li><URL info={WhatToPlay}/></li>
                   <li><URL info={XiamiExport}/></li>

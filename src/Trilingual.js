@@ -5,13 +5,14 @@ const TrilingualBody = (props) => {
     
     const currLang = props.currLang
     // console.log(currLang)
+    const Level = `${props.level}`
 
     if (currLang === 'en') {
-      return <h2 lang='en'>{props.message.en}</h2>
+      return <Level lang='en'>{props.message.en}</Level> 
     } else if (currLang === 'zh-Hans') {
-      return <h2 lang='zh-Hans'>{props.message.zh}</h2>
+      return <Level lang='zh-Hans'>{props.message.zh}</Level>
     } else if (currLang === 'ja') {
-      return <h2 lang='ja'>{props.message.ja}</h2>
+      return <Level lang='ja'>{props.message.ja}</Level>
     } else {
       return "No match"
     }
@@ -23,11 +24,11 @@ const TrilingualBody = (props) => {
 
 class Trilingual extends Component {
   render() {
-    const {message} = this.props 
+    const {message, level} = this.props 
     
     return (
         <LangContext.Consumer>
-            {({lang, }) => <TrilingualBody message={message} currLang={lang}/>}
+            {({lang, }) => <TrilingualBody message={message} currLang={lang} level={level}/>}
         </LangContext.Consumer>
     )
   }

@@ -25,7 +25,7 @@ class Life extends Component {
     render() {
         return (
             <div>
-            <Trilingual message={ChineseText}/>
+            <Trilingual message={ChineseText} level="h2"/>
             <div align="center">
               <div style={bannerStyle}>
                 <a href="https://ctext.org">
@@ -33,8 +33,8 @@ class Life extends Component {
                 </a>
               </div>
             </div>
-            <Trilingual message={OsuRecording}/>
-            <iframe title="My Osu! Recordings" width="612" height="345" src="https://www.youtube.com/embed/videoseries?list=PLMR6fjSMeG_cots2NEWG0Sv8C1TW0PXfJ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <Trilingual message={OsuRecording} level="h2"/>
+            <iframe title="My Osu! Recordings" width="612" height="345" src="https://www.youtube.com/embed/videoseries?list=PLMR6fjSMeG_cots2NEWG0Sv8C1TW0PXfJ" frameBorder="0" allow="autoplay; encrypted-media" allowFullscreen></iframe>
             </div>
         )
     }

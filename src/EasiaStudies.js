@@ -12,7 +12,7 @@ class EasiaStudy extends Component {
     render() {
         return (
         <div>
-            <Trilingual message={title}/>
+            <Trilingual message={title} level="h2"/>
             <ul className="indent">
                   <li><a href= "bookreview.docx">Book Review of The Chrysanthemum and the Sword</a></li>
                   <li><a href= "Comparison of the Confucianism in the Pre-Qin Period.docx">Comparison of the Confucianism in the Pre-Qin Period</a></li>

@@ -7,6 +7,7 @@ import EasiaStudy from './EasiaStudies'
 import Miscellaneous from './Miscellaneous'
 import Notes from './Notes'
 import Life from './Life'
+import SymbolicComputation from './SymbolicComputation'
 
 // export const LangContext = React.createContext('en');
 
@@ -37,6 +38,7 @@ class App extends Component {
                 <Sidebar />
             <div className="content">
                 <Greetings />
+                <SymbolicComputation />
                 <EasiaStudy />
                 <Miscellaneous />
                 <Notes />
